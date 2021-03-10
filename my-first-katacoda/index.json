@@ -6,8 +6,12 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Step 1 - Cloning from github and go into folder",
         "text": "step1.md"
+      },
+      {
+        "title": "Step 2 - Build voting-app from Dockerfile",
+        "text": "step2.md"
       }
     ],
     "intro": {
