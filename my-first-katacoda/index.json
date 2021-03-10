@@ -11,7 +11,7 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "intro.mdi",
       "courseData": "env-init.sh"
     },
     "finish": {
@@ -22,6 +22,6 @@
     "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "Centos 7"
+    "imageid": "ubuntu:2004"
   }
 }
