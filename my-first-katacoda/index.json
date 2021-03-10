@@ -1,8 +1,8 @@
 {
-  "title": "My First Katacoda",
-  "description": "Trying katacoda ",
+  "title": "Docker example voting app",
+  "description": "A simple distributed application running across multiple Docker containers. ",
   "difficulty": "Beginner",
-  "time": "2 hours",
+  "time": "1 hours",
   "details": {
     "steps": [
       {
@@ -11,7 +11,8 @@
       }
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "intro.mdi",
+      "courseData": "env-init.sh"
     },
     "finish": {
       "text": "finish.md"
