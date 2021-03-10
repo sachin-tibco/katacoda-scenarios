@@ -1,6 +1,6 @@
-`test`{{execute}}
+`cd example-voting-app`{{execute}}
 
-
+`ls -al` {{execute}}
 
 testtt
 

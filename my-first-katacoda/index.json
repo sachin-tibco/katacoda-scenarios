@@ -11,7 +11,7 @@
       }
     ],
     "intro": {
-      "text": "intro.mdi",
+      "text": "intro.md",
       "courseData": "env-init.sh"
     },
     "finish": {
