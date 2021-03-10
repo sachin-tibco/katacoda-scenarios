@@ -9,6 +9,6 @@ List content inside example-voting-app
 `ls -al`{{execute}}
 
 
-![Voting app architecture](./architecture.png.png)
+![Voting app architecture](./assets/architecture.png)
 
 
