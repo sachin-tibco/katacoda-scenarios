@@ -17,5 +17,15 @@ Run the voting-app and publish a port to 5000 to 80
 
 `docker run -p 5000:80 voting-app`{{execute}}
 
+Check on browser. Vote page load, click on vote shows the error page
+https://[[HOST_SUBDOMAIN]]-5000-[[KATACODA_HOST]].environments.katacoda.com
+
+Run the redis 
+`docker run -d --name=redis redis`{{execute}}
 
 
+Run the voting-app in detached mode using -d and link with the "redis"
+`docker run -d -p 5000:80 --link redis:redis voting-app`{{execute}}
+
+Again check the browser now no error 
+https://[[HOST_SUBDOMAIN]]-5000-[[KATACODA_HOST]].environments.katacoda.com
