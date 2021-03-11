@@ -1,6 +1,6 @@
 CD to worker folder, worker based on .net and link with both redis and postgres database
 
-`cd /root/example-voting-app/worker`[{execute}]
+`cd /root/example-voting-app/worker`{{execute}}
 
 Build worker-app from the Dockerfile
 
