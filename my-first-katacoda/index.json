@@ -12,6 +12,10 @@
       {
         "title": "Step 2 - Build voting-app from Dockerfile",
         "text": "step2.md"
+      },
+      {
+        "title": "Step 3 - Build worker-app from Dockerfile, run and link",
+        "text": "step3.md"
       }
     ],
     "intro": {
