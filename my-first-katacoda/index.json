@@ -14,8 +14,12 @@
         "text": "step2.md"
       },
       {
-        "title": "Step 3 - Build worker-app from Dockerfile, run and link",
+        "title": "Step 3 - Build worker-app from Dockerfile, run and link with redis,db",
         "text": "step3.md"
+      },
+      {
+        "title": "Step 4 - Build resulting-app from Dockerfile, run and link with db",
+        "text": "step4.md"
       }
     ],
     "intro": {
