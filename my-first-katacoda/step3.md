@@ -13,7 +13,7 @@ Before run run the postgres
 
 Once image is build, now run the worker-app and link with redis and db
 
-`docker run --link redis:redis --link db:db worker-app`{{execute}}
+`docker run -d --link redis:redis --link db:db worker-app`{{execute}}
 
 `docker ps`{{execute}}
 
