@@ -5,11 +5,21 @@ Create a directory "cow-test"
 
 `cd cow-test`{{execute}}
 
+Creating two Dockerfiles - Dockerfile.base and Dockerfile
+Using the first one to create an image called acme/my-base-image:1.0
+
 `touch Dockerfile.base`{{execute}}
+
+
+The second one is based on acme/my-base-image:1.0, but has some additional layers:
 `touch Dockerfile`{{execute}}
+
+
 `touch hello.sh`{{execute}}
 
-Dockerfile.base
+
+Content of Dockerfile.base
+
 <pre class="file"
  data-filename="/root/cow-test/Dockerfile.base"
   data-target="replace">
@@ -17,7 +27,8 @@ Dockerfile.base
 	COPY . /app
 </pre>
 
-Dockerfile
+Content of Dockerfile
+
 <pre class="file"
  data-filename="/root/cow-test/Dockerfile"
   data-target="replace">
@@ -26,13 +37,41 @@ Dockerfile
 </pre>
 
 
+Content of hello.sh 
 
-hello.sh
-
-Dockerfile
 <pre class="file"
  data-filename="/root/cow-test/hello.sh"
   data-target="replace">
   	#!/bin/sh
 	echo "Hello world"
 </pre>
+
+Save the file, and make it executable:
+
+chmod +x hello.sh
+
+
+Build the image from first Dockerfile.base
+
+`docker build -t acme/my-base-image:1.0 -f Dockerfile.base .`{{execute}}
+
+
+Build the second image.
+
+`docker build -t acme/my-final-image:1.0 -f Dockerfile .`{{execute}}
+
+
+Check out the sizes of the images:
+
+`docker image ls`{{execute}}
+
+
+Check out the layers that comprise each image:
+
+`docker history acme/my-base-image:1.0`{{execute}}
+
+
+`docker history acme/my-final-image:1.0`{{execute}}
+
+
+Notice that all the layers are identical except the top layer of the second image. All the other layers are shared between the two images, and are only stored once in /var/lib/docker/. The new layer actually doesn’t take any room at all, because it is not changing any files, but only running a command.
