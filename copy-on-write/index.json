@@ -8,6 +8,10 @@
       {
         "title": "Copy on write",
         "text": "step1.md"
+      },
+      {
+        "title": "Image and container layers on-disk",
+        "text": "step2.md"
       }
     ],
     "intro": {
