@@ -10,7 +10,7 @@ Create a directory "cow-test"
 Dockerfile.base
 <pre class="file"
  data-filename="/root/cow-test/Dockerfile.base"
-  data-target="replace">
+  data-target="copy">
   	FROM ubuntu:18.04
 	COPY . /app
 </pre>
@@ -18,10 +18,19 @@ Dockerfile.base
 Dockerfile
 <pre class="file"
  data-filename="/root/cow-test/Dockerfile"
-  data-target="replace">
+  data-target="copy">
   	FROM acme/my-base-image:1.0
 	CMD /app/hello.sh
 </pre>
 
 
 
+hello.sh
+
+Dockerfile
+<pre class="file"
+ data-filename="/root/cow-test/hello.sh"
+  data-target="copy">
+  	#!/bin/sh
+	echo "Hello world"
+</pre>
