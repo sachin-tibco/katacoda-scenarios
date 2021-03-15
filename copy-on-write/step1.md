@@ -21,7 +21,7 @@ The second one is based on acme/my-base-image:1.0, but has some additional layer
 
 Open and copy below content to Dockerfile.base
 
-/root/cow-test/Dockerfile.base{{open}}
+`/root/cow-test/Dockerfile.base`{{open}}
 
 <pre class="file"
  data-filename="/root/cow-test/Dockerfile.base"
@@ -32,7 +32,7 @@ COPY . /app
 
 Open and copy below content to Dockerfile
 
-/root/cow-test/Dockerfile{{open}}
+`/root/cow-test/Dockerfile`{{open}}
 
 <pre class="file"
  data-filename="/root/cow-test/Dockerfile"
@@ -44,7 +44,7 @@ CMD /app/hello.sh
 
 Open and copy below content to hello.sh 
 
-/root/cow-test/hello.sh{{open}}
+`/root/cow-test/hello.sh`{{open}}
 
 <pre class="file"
  data-filename="/root/cow-test/hello.sh"
