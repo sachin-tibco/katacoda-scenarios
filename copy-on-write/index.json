@@ -1,0 +1,26 @@
+{
+  "title": "Docker copy on write example",
+  "description": "Small demo on how copy on write works",
+  "difficulty": "Beginner",
+  "time": "1 hours",
+  "details": {
+    "steps": [
+      {
+        "title": "Copy on write",
+        "text": "step1.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu:2004"
+  }
+}
