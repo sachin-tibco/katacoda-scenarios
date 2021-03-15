@@ -5,12 +5,14 @@ Create a directory "cow-test"
 
 `cd cow-test`{{execute}}
 
-`vi Dockerfile.base`{{execute}}
+`touch Dockerfile.base`{{execute}}
+`touch Dockerfile`{{execute}}
+`touch hello.sh`{{execute}}
 
 Dockerfile.base
 <pre class="file"
  data-filename="/root/cow-test/Dockerfile.base"
-  data-target="copy">
+  data-target="replace">
   	FROM ubuntu:18.04
 	COPY . /app
 </pre>
@@ -18,7 +20,7 @@ Dockerfile.base
 Dockerfile
 <pre class="file"
  data-filename="/root/cow-test/Dockerfile"
-  data-target="copy">
+  data-target="replace">
   	FROM acme/my-base-image:1.0
 	CMD /app/hello.sh
 </pre>
@@ -30,7 +32,7 @@ hello.sh
 Dockerfile
 <pre class="file"
  data-filename="/root/cow-test/hello.sh"
-  data-target="copy">
+  data-target="replace">
   	#!/bin/sh
 	echo "Hello world"
 </pre>
